@@ -1,0 +1,25 @@
+:root {
+    --foreground: #000000;
+    --primary: rgb(0, 92, 255);
+  }
+  
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+.promotional-bar {
+    height: 30px;
+    background-color: var(--primary);
+}
+
+.price {
+    background-color: #6220C1;
+}
+
+.header {
+    height: 120px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}

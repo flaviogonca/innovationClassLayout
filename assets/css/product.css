@@ -1,0 +1,21 @@
+.buy-button {
+    background-color: var(--primary);
+}
+
+.ten-off {
+    background-color: #5EC0BE;
+}
+
+.product-description {
+    height: 500px;
+}
+
+.image-side {
+    height: 500px;
+    background-color: #C2C2C2;
+}
+
+.image-side img {
+    width: 350px;
+    height: 350px;
+}

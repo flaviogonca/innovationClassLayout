@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+    <link rel="stylesheet" href="assets/css/main.css" type="text/css">
+    <title>Penseavanti</title>
+</head>
+<body>
+
+    <!-- PROMOTIONAL BAR -->
+    <section class="container-fluid bg-red">
+        <div class="promotional-bar text-center font-bold">
+            <p class="text-white text-sm inline-block align-bottom">Ganhe <span class="price px-1">R$10,00</span> de desconto no seu primeiro pedido. Utilize o cupom <span class="italic font-thin">DESCONTO10</span></p>
+        </div>
+    </section>
+
+    <!-- HEADER SECTION -->
+    <section class="header flex justify-center">
+        <header class="container">
+            <div class="mx-auto px-4 py-4">
+                <div class="flex items-center justify-between gap-4">
+                    <!-- Logo -->
+                    <div class="flex-shrink-0">
+                        <h1 class="text-2xl font-bold tracking-wider">AVANTI</h1>
+                    </div>
+
+                    <!-- Search bar -->
+                    <div class="flex-1 max-w-2xl mx-8">
+                        <div class="relative">
+                            <input
+                                type="search"
+                                placeholder="Digite aqui o que você procura"
+                                class="w-full pl-4 pr-12 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            />
+                            <button class="absolute right-2 top-1/2 transform -translate-y-1/2 p-2 hover:bg-gray-100 rounded">
+                                <span class="icon-search "></span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- User actions -->
+                    <div class="flex items-center gap-4">
+                        <div class="flex items-center gap-2 text-sm">
+                            <span class="icon-user "></span>
+                            <div>
+                                <div class="font-medium">Olá,</div>
+                                <div class="">Nome cliente!</div>
+                            </div>
+                        </div>
+                        <div class="relative">
+                            <span class="icon-cart  text-xl"></span>
+                            <span class="absolute -top-2 -right-2 bg-blue-600 text-white rounded-full w-5 h-5 flex items-center justify-center text-xs">
+                                2
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation -->
+            <nav class="">
+                <div class="max-w-7xl mx-auto px-4">
+                    <div class="flex items-center gap-8">
+                        <button class="flex items-center font-bold gap-2 px-3 py-2 rounded">
+                            <span class="icon-menu "></span>
+                            Todas as Categorias
+                        </button>
+                        <a href="#" class="text-sm font-normal">Departamento</a>
+                        <a href="#" class="text-sm font-normal">Departamento</a>
+                        <a href="#" class="text-sm font-normal">Departamento</a>
+                        <a href="#" class="text-sm font-normal">Departamento</a>
+                        <a href="#" class="text-sm font-normal">Departamento</a>
+                        <a href="#" class="text-sm font-normal">Departamento</a>
+                        <a href="#" class="text-sm font-normal">Departamento</a>
+                        <a href="#" class="text-sm font-normal">Departamento</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </section>
+    <!-- HERO SECTION-->
+    <section class="hero container-fluid flex justify-center">
+        <div class="container max-w-7xl mx-auto px-4">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Left side - Image -->
+                <div class="relative chair">
+                    <img
+                        src="assets/img/chair.png"
+                        alt="Stack of folded clothes"
+                        class="w-full h-auto object-cover rounded-lg"
+                    />
+                </div>
+
+                <!-- Right side - Text -->
+                <div class="text-center hero-text">
+                    <h2 class="text-6xl font-bold mb-6">
+                        SUPER<span class="font-light">SALE</span>
+                    </h2>
+                    <p class="text-2xl font-medium mb-4 tracking-wider">ITENS SELECIONADOS COM ATÉ</p>
+                    <p class="text-center text-5xl font-bold price-off">50%OFF</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Section -->
+     <section class="py-16 bg-white flex justify-center">
+        <div class="max-w-7xl mx-auto px-4">
+            <!-- Section Header -->
+            <div class="flex justify-between items-center mb-8">
+                <h3 class="text-xl font-bold">Lançamentos</h3>
+                <a href="#" class="text-sm">
+                    Ver mais
+                </a>
+            </div>
+
+            <!-- Product Carousel -->
+            <div class="relative">
+                <div class="flex gap-6 overflow-x-auto pb-4 carousel-container">
+                    <!-- Product Card 1 -->
+                    <div class="flex-shrink-0 w-64 border border-gray-200 rounded-lg">
+                        <div class="p-4">
+                            <div class="relative mb-4">
+                                <span class="absolute top-2 left-2 bg-blue-900 text-white text-xs px-2 py-1 rounded-sm">NOVO</span>
+                                <img
+                                    src="assets/img/model.png"
+                                    alt="White t-shirt"
+                                    class="w-full h-64 object-cover rounded-md"
+                                />
+                            </div>
+                            <p class="text-sm text-gray-800 text-center">
+                                &lt;h3&gt; Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing Elit &lt;/h3&gt;
+                            </p>
+                            <div class="mb-2">
+                                <span class="text-xs line-through">R$ 100,00</span>
+                                <div class="flex items-center gap-2">
+                                    <span class="text-lg font-bold">R$ 79,90</span>
+                                    <span class="ten-off text-white text-xs px-2 py-1 rounded">10% OFF</span>
+                                </div>
+                            </div>
+                            <p class="text-xs text-gray-800 mb-4">Ou em até 10x de R$ 7,90</p>
+                            <button class="w-full font-bold text-white py-2 px-4 rounded-lg text-sm buy-button">
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 2 -->
+                    <div class="flex-shrink-0 w-64 border border-gray-200 rounded-lg">
+                        <div class="p-4">
+                            <div class="relative mb-4">
+                                <span class="absolute top-2 left-2 bg-blue-900 text-white text-xs px-2 py-1 rounded-sm">NOVO</span>
+                                <img
+                                    src="assets/img/model.png"
+                                    alt="White t-shirt"
+                                    class="w-full h-64 object-cover rounded-md"
+                                />
+                            </div>
+                            <p class="text-sm text-gray-800 text-center">
+                                &lt;h3&gt; Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing Elit &lt;/h3&gt;
+                            </p>
+                            <div class="mb-2">
+                                <span class="text-xs line-through">R$ 100,00</span>
+                                <div class="flex items-center gap-2">
+                                    <span class="text-lg font-bold">R$ 79,90</span>
+                                    <span class="ten-off text-white text-xs px-2 py-1 rounded">10% OFF</span>
+                                </div>
+                            </div>
+                            <p class="text-xs text-gray-800 mb-4">Ou em até 10x de R$ 7,90</p>
+                            <button class="w-full font-bold text-white py-2 px-4 rounded-lg text-sm buy-button">
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 3 -->
+                    <div class="flex-shrink-0 w-64 border border-gray-200 rounded-lg">
+                        <div class="p-4">
+                            <div class="relative mb-4">
+                                <span class="absolute top-2 left-2 bg-blue-900 text-white text-xs px-2 py-1 rounded-sm">NOVO</span>
+                                <img
+                                    src="assets/img/model.png"
+                                    alt="White t-shirt"
+                                    class="w-full h-64 object-cover rounded-md"
+                                />
+                            </div>
+                            <p class="text-sm text-gray-800 text-center">
+                                &lt;h3&gt; Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing Elit &lt;/h3&gt;
+                            </p>
+                            <div class="mb-2">
+                                <span class="text-xs line-through">R$ 100,00</span>
+                                <div class="flex items-center gap-2">
+                                    <span class="text-lg font-bold">R$ 79,90</span>
+                                    <span class="ten-off text-white text-xs px-2 py-1 rounded">10% OFF</span>
+                                </div>
+                            </div>
+                            <p class="text-xs text-gray-800 mb-4">Ou em até 10x de R$ 7,90</p>
+                            <button class="w-full font-bold text-white py-2 px-4 rounded-lg text-sm buy-button">
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 4 -->
+                    <div class="flex-shrink-0 w-64 border border-gray-200 rounded-lg">
+                        <div class="p-4">
+                            <div class="relative mb-4">
+                                <span class="absolute top-2 left-2 bg-blue-900 text-white text-xs px-2 py-1 rounded-sm">NOVO</span>
+                                <img
+                                    src="assets/img/model.png"
+                                    alt="White t-shirt"
+                                    class="w-full h-64 object-cover rounded-md"
+                                />
+                            </div>
+                            <p class="text-sm text-gray-800 text-center">
+                                &lt;h3&gt; Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing Elit &lt;/h3&gt;
+                            </p>
+                            <div class="mb-2">
+                                <span class="text-xs line-through">R$ 100,00</span>
+                                <div class="flex items-center gap-2">
+                                    <span class="text-lg font-bold">R$ 79,90</span>
+                                    <span class="ten-off text-white text-xs px-2 py-1 rounded">10% OFF</span>
+                                </div>
+                            </div>
+                            <p class="text-xs text-gray-800 mb-4">Ou em até 10x de R$ 7,90</p>
+                            <button class="w-full font-bold text-white py-2 px-4 rounded-lg text-sm buy-button">
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 5 -->
+                    <div class="flex-shrink-0 w-64 border border-gray-200 rounded-lg">
+                        <div class="p-4">
+                            <div class="relative mb-4">
+                                <span class="absolute top-2 left-2 bg-blue-900 text-white text-xs px-2 py-1 rounded-sm">NOVO</span>
+                                <img
+                                    src="assets/img/model.png"
+                                    alt="White t-shirt"
+                                    class="w-full h-64 object-cover rounded-md"
+                                />
+                            </div>
+                            <p class="text-sm text-gray-800 text-center">
+                                &lt;h3&gt; Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing Elit &lt;/h3&gt;
+                            </p>
+                            <div class="mb-2">
+                                <span class="text-xs line-through">R$ 100,00</span>
+                                <div class="flex items-center gap-2">
+                                    <span class="text-lg font-bold">R$ 79,90</span>
+                                    <span class="ten-off text-white text-xs px-2 py-1 rounded">10% OFF</span>
+                                </div>
+                            </div>
+                            <p class="text-xs text-gray-800 mb-4">Ou em até 10x de R$ 7,90</p>
+                            <button class="w-full font-bold text-white py-2 px-4 rounded-lg text-sm buy-button">
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation arrows -->
+                <button class="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-4 bg-white shadow-lg rounded-full w-10 h-10 flex items-center justify-center border border-gray-200 hover:bg-gray-50">
+                    <span class="icon-left text-gray-600 text-xl"></span>
+                </button>
+                <button class="absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-4 bg-white shadow-lg rounded-full w-10 h-10 flex items-center justify-center border border-gray-200 hover:bg-gray-50">
+                    <span class="icon-right text-gray-600 text-xl"></span>
+                </button>
+            </div>
+            
+            <!-- Pagination Dots -->
+            <div class="flex justify-center mt-6 space-x-2">
+                <button class="w-2 h-2 bg-gray-800 rounded-full"></button>
+                <button class="w-2 h-2 bg-gray-300 rounded-full"></button>
+                <button class="w-2 h-2 bg-gray-300 rounded-full"></button>
+            </div>
+        </div>
+    </section>
+    <!-- Product Description -->
+    <section class="py-10 bg-white flex justify-center">
+        <div class="container grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="image-side flex justify-center items-center">
+                <img src="assets/img/copo.png" alt="chaneva avanti">
+            </div>
+            <div class="product-description">
+                <h2 class="text-3xl font-bold text-gray-900">LOREM IPSUM</h2>
+                <div class="space-y-4 text-gray-700 leading-relaxed">
+                    <p>
+                        Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris laoreet lacus ut 
+                        eleifend viverra. Cras efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia pharetra magna, vel 
+                        pulvinar ligula hendrerit a. Maecenas fringilla porttitor tortor eget lacinia. Donec sollicitudin euismod orci, 
+                        auctor fringilla magna consequat interdum. Fusce sagittis elit a libero commodo egestas efficitur id 
+                        augue.
+                    </p>
+                    
+                    <p>
+                        Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris laoreet lacus ut 
+                        eleifend viverra. Cras efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia pharetra magna, vel 
+                        pulvinar ligula hendrerit a. Maecenas fringilla porttitor tortor eget lacinia. Donec sollicitudin euismod orci, 
+                        auctor fringilla magna consequat interdum. Fusce sagittis elit a libero commodo egestas efficitur id 
+                        augue.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BANNER 1-->
+    <section class="banner-1 container-fluid flex justify-center my-12">
+        <div class="container grid grid-cols-1 lg:grid-cols-2 items-center">
+            <div class="product-description">
+                <h2 class="text-3xl font-bold text-gray-900">LOREM IPSUM</h2>
+                <div class="space-y-4 text-gray-700 leading-relaxed">
+                    <p>
+                        Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris laoreet lacus ut 
+                        eleifend viverra. Cras efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia pharetra magna, vel 
+                        pulvinar ligula hendrerit a. Maecenas fringilla porttitor tortor eget lacinia. Donec sollicitudin euismod orci, 
+                        auctor fringilla magna consequat interdum. Fusce sagittis elit a libero commodo egestas efficitur id 
+                        augue.
+                    </p>
+                    
+                    <p>
+                        Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris laoreet lacus ut 
+                        eleifend viverra. Cras efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia pharetra magna, vel 
+                        pulvinar ligula hendrerit a. Maecenas fringilla porttitor tortor eget lacinia. Donec sollicitudin euismod orci, 
+                        auctor fringilla magna consequat interdum. Fusce sagittis elit a libero commodo egestas efficitur id 
+                        augue.
+                    </p>
+                </div>
+            </div>
+            <div class="image-side flex justify-center items-center">
+                <img src="assets/img/copo.png" alt="chaneva avanti">
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Simple carousel navigation functionality
+        const leftArrow = document.querySelector('.icon-left').parentElement;
+        const rightArrow = document.querySelector('.icon-right').parentElement;
+        const carousel = document.querySelector('.carousel-container');
+
+        leftArrow.addEventListener('click', () => {
+            carousel.scrollBy({ left: -280, behavior: 'smooth' });
+        });
+
+        rightArrow.addEventListener('click', () => {
+            carousel.scrollBy({ left: 280, behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>
