@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Font Awesome CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
     <link rel="stylesheet" href="assets/css/main.css" type="text/css">
@@ -24,7 +27,8 @@
                 <div class="flex items-center justify-between gap-4">
                     <!-- Logo -->
                     <div class="flex-shrink-0">
-                        <h1 class="text-2xl font-bold tracking-wider">AVANTI</h1>
+                        <!-- <h1 class="text-2xl font-bold tracking-wider">AVANTI</h1> -->
+                        <img src="assets/img/Logo.png" alt="">
                     </div>
 
                     <!-- Search bar -->
@@ -35,8 +39,8 @@
                                 placeholder="Digite aqui o que você procura"
                                 class="w-full pl-4 pr-12 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                             />
-                            <button class="absolute right-2 top-1/2 transform -translate-y-1/2 p-2 hover:bg-gray-100 rounded">
-                                <span class="icon-search "></span>
+                            <button class="absolute top-0 transform -translate-y-0 p-2 rounded">
+                                  <i class="fas fa-search text-lg "></i>
                             </button>
                         </div>
                     </div>
@@ -51,10 +55,11 @@
                             </div>
                         </div>
                         <div class="relative">
-                            <span class="icon-cart  text-xl"></span>
+                            <img src="assets/img/icons/Shop.png" class="h-100">
+                            <!-- <span class="icon-cart  text-xl"></span>
                             <span class="absolute -top-2 -right-2 bg-blue-600 text-white rounded-full w-5 h-5 flex items-center justify-center text-xs">
                                 2
-                            </span>
+                            </span> -->
                         </div>
                     </div>
                 </div>
@@ -330,8 +335,8 @@
                     </p>
                 </div>
             </div>
-            <div class="image-side flex justify-center items-center">
-                <img src="assets/img/copo.png" alt="chaneva avanti">
+            <div class="flex justify-center items-center">
+                <img src="assets/img/copo-e-madeira.png" alt="chaneva avanti">
             </div>
         </div>
     </section>
