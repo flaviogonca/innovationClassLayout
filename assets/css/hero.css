@@ -13,6 +13,7 @@
 
 .hero-text {
     height: 225px;
+    width: 450px;
 }
 
 .hero-text p {
@@ -21,4 +22,21 @@
 
 .price-off {
     color: var(--primary);
+}
+
+.pricec
+{
+    width: 150px;
+}
+
+.bordr-color
+{
+    border-color:#005CFF;
+}
+.text-colo
+{
+    color: #005CFF;
+}
+.bg-color{
+    background-color: #005CFF;
 }

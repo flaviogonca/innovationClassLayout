@@ -11,11 +11,15 @@
 }
 
 .image-side {
-    height: 500px;
+    
     background-color: #C2C2C2;
 }
 
-.image-side img {
-    width: 350px;
-    height: 350px;
+
+
+
+.banner
+{
+    width: 1177px;
+    height: 747px;
 }

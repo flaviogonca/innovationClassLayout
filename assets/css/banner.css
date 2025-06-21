@@ -2,3 +2,10 @@
     height: 820px;
     background-color: #DEDEDE;
 }
+
+.img-banner
+{
+    background-image: url(../img/baner.png);
+    background-repeat: no-repeat;
+    height: 660px;
+}
