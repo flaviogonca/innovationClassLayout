@@ -1,102 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <!-- Font Awesome CDN -->
+    <!-- Font Awesome CDN -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    
+
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
     <link rel="stylesheet" href="assets/css/main.css" type="text/css">
     <title>Penseavanti</title>
 </head>
+
 <body>
 
-    <!-- PROMOTIONAL BAR -->
-    <section class="container-fluid bg-red">
-        <div class="promotional-bar text-center font-bold">
-            <p class="text-white text-sm inline-block align-bottom">Ganhe <span class="price px-1">R$10,00</span> de desconto no seu primeiro pedido. Utilize o cupom <span class="italic font-thin">DESCONTO10</span></p>
+    <!-- HEADER SECTION-->
+    <header>
+        <!-- TOP BLUE-->
+        <div class="promotional-bar text-center font-bold h-[30px] flex items-center justify-center py-5">
+            <p class="text-white text-sm "> Ganhe
+                <span class="price px-1 rounded-md py-1 px-1">R$10,00</span>
+                de desconto no seu primeiro pedido. Utilize o cupom
+                <span class="italic font-thin">DESCONTO10</span>
+            </p>
         </div>
-    </section>
-
-    <!-- HEADER SECTION -->
-    <section class="header flex justify-center">
-        <header class="container">
-            <div class="mx-auto px-4 py-4">
-                <div class="flex items-center justify-between gap-4">
+        <!-- END BLUE-->
+        <!-- TOP SEARCH-->
+        <div class="container px-4 py-4 mx-auto ">
+            <div class="flex items-center grid grid-cols-7 gap-4 gap-x-12">
+                <div class="flex  gap-x-10 col-span-5">
                     <!-- Logo -->
-                    <div class="flex-shrink-0">
-                        <!-- <h1 class="text-2xl font-bold tracking-wider">AVANTI</h1> -->
-                        <img src="assets/img/Logo.png" alt="">
-                    </div>
+                    <img src="assets/img/Logo.png" alt="" class="w-[152px] h-[27px]">
+                    <input type="text" name="" id="" 
+                    placeholder="Digite aqui o que você procura" 
+                    class="border w-full h-[38px] w-[190px] rounded-lg text-gray-900">
+                </div>
 
-                    <!-- Search bar -->
-                    <div class="flex-1 max-w-2xl mx-8">
-                        <div class="relative">
-                            <input
-                                type="search"
-                                placeholder="Digite aqui o que você procura"
-                                class="w-full pl-4 pr-12 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                            />
-                            <button class="absolute top-0 transform -translate-y-0 p-2 rounded">
-                                  <i class="fas fa-search text-lg "></i>
-                            </button>
-                        </div>
-                    </div>
 
-                    <!-- User actions -->
-                    <div class="flex items-center gap-4">
-                        <div class="flex items-center gap-2 text-sm">
-                            <span class="icon-user "></span>
-                            <div>
-                                <div class="font-medium">Olá,</div>
-                                <div class="">Nome cliente!</div>
-                            </div>
-                        </div>
-                        <div class="relative">
-                            <img src="assets/img/icons/Shop.png" class="h-100">
-                            <!-- <span class="icon-cart  text-xl"></span>
-                            <span class="absolute -top-2 -right-2 bg-blue-600 text-white rounded-full w-5 h-5 flex items-center justify-center text-xs">
-                                2
-                            </span> -->
-                        </div>
-                    </div>
+                <!-- User actions -->
+                <div class="flex items-center gap-x-8 col-span-2 justify-self-end ">
+                    <span class="flex items-center gap-2">
+                        <img src="assets/img/icons/user.png" alt="" class="w-8 h-8">
+                        <span class="text-sm font-semibold">Ola,<br> Nome cliente</span>
+                    </span>
+                    <span class="relative">
+                        <img src="assets/img/icons/cart.png" alt="" class="w-8 h-8 mr-4 mt-2">
+                        <b class="gb-pattern rounded-full text-sm font-bold absolute
+                            text-white w-6 h-6 flex items-center justify-center top-0 right-0">
+                            2
+                        </b>
+                    </span>
+
                 </div>
             </div>
+        </div>
+        <!-- END SEARCH-->
+        <!-- Navigation -->
+        <nav class="container mx-auto">
+                <div class="flex items-center gap-8">
+                    <button class="flex items-center font-bold gap-2 px-3 py-2 rounded">
+                        <span class="icon-menu "></span>
+                        Todas as Categorias
+                    </button>
 
-            <!-- Navigation -->
-            <nav class="">
-                <div class="max-w-7xl mx-auto px-4">
-                    <div class="flex items-center gap-8">
-                        <button class="flex items-center font-bold gap-2 px-3 py-2 rounded">
-                            <span class="icon-menu "></span>
-                            Todas as Categorias
-                        </button>
-                        <a href="#" class="text-sm font-normal">Departamento</a>
-                        <a href="#" class="text-sm font-normal">Departamento</a>
-                        <a href="#" class="text-sm font-normal">Departamento</a>
-                        <a href="#" class="text-sm font-normal">Departamento</a>
-                        <a href="#" class="text-sm font-normal">Departamento</a>
-                        <a href="#" class="text-sm font-normal">Departamento</a>
-                        <a href="#" class="text-sm font-normal">Departamento</a>
-                        <a href="#" class="text-sm font-normal">Departamento</a>
-                    </div>
+                    <a href="#" class="text-sm font-normal">Departamento</a>
+                    <a href="#" class="text-sm font-normal">Departamento</a>
+                    <a href="#" class="text-sm font-normal">Departamento</a>
+                    <a href="#" class="text-sm font-normal">Departamento</a>
+                    <a href="#" class="text-sm font-normal">Departamento</a>
+                    <a href="#" class="text-sm font-normal">Departamento</a>
+                    <a href="#" class="text-sm font-normal">Departamento</a>
+                    <a href="#" class="text-sm font-normal">Departamento</a>
                 </div>
-            </nav>
-        </header>
-    </section>
-    <!-- HERO SECTION-->
+        </nav>
+    </header>
+    <!-- HEADER SECTION-->
     <section class="hero container-fluid flex justify-center">
         <div class="container max-w-7xl mx-auto px-4">
             <div class="grid lg:grid-cols-2 gap-12 items-center">
                 <!-- Left side - Image -->
                 <div class="relative chair">
-                    <img
-                        src="assets/img/chair.png"
-                        alt="Stack of folded clothes"
-                        class="w-full h-auto object-cover rounded-lg"
-                    />
+                    <img src="assets/img/chair.png" alt="Stack of folded clothes"
+                        class="w-full h-auto object-cover rounded-lg" />
                 </div>
 
                 <!-- Right side - Text -->
@@ -112,7 +98,7 @@
     </section>
 
     <!-- Product Section -->
-     <section class="py-16 bg-white flex justify-center">
+    <section class="py-16 bg-white flex justify-center">
         <div class="max-w-7xl mx-auto px-4">
             <!-- Section Header -->
             <div class="flex justify-between items-center mb-8">
@@ -129,12 +115,10 @@
                     <div class="flex-shrink-0 w-64 border border-gray-200 rounded-lg">
                         <div class="p-4">
                             <div class="relative mb-4">
-                                <span class="absolute top-2 left-2 bg-blue-900 text-white text-xs px-2 py-1 rounded-sm">NOVO</span>
-                                <img
-                                    src="assets/img/model.png"
-                                    alt="White t-shirt"
-                                    class="w-full h-64 object-cover rounded-md"
-                                />
+                                <span
+                                    class="absolute top-2 left-2 bg-blue-900 text-white text-xs px-2 py-1 rounded-sm">NOVO</span>
+                                <img src="assets/img/model.png" alt="White t-shirt"
+                                    class="w-full h-64 object-cover rounded-md" />
                             </div>
                             <p class="text-sm text-gray-800 text-center">
                                 &lt;h3&gt; Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing Elit &lt;/h3&gt;
@@ -157,12 +141,10 @@
                     <div class="flex-shrink-0 w-64 border border-gray-200 rounded-lg">
                         <div class="p-4">
                             <div class="relative mb-4">
-                                <span class="absolute top-2 left-2 bg-blue-900 text-white text-xs px-2 py-1 rounded-sm">NOVO</span>
-                                <img
-                                    src="assets/img/model.png"
-                                    alt="White t-shirt"
-                                    class="w-full h-64 object-cover rounded-md"
-                                />
+                                <span
+                                    class="absolute top-2 left-2 bg-blue-900 text-white text-xs px-2 py-1 rounded-sm">NOVO</span>
+                                <img src="assets/img/model.png" alt="White t-shirt"
+                                    class="w-full h-64 object-cover rounded-md" />
                             </div>
                             <p class="text-sm text-gray-800 text-center">
                                 &lt;h3&gt; Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing Elit &lt;/h3&gt;
@@ -185,12 +167,10 @@
                     <div class="flex-shrink-0 w-64 border border-gray-200 rounded-lg">
                         <div class="p-4">
                             <div class="relative mb-4">
-                                <span class="absolute top-2 left-2 bg-blue-900 text-white text-xs px-2 py-1 rounded-sm">NOVO</span>
-                                <img
-                                    src="assets/img/model.png"
-                                    alt="White t-shirt"
-                                    class="w-full h-64 object-cover rounded-md"
-                                />
+                                <span
+                                    class="absolute top-2 left-2 bg-blue-900 text-white text-xs px-2 py-1 rounded-sm">NOVO</span>
+                                <img src="assets/img/model.png" alt="White t-shirt"
+                                    class="w-full h-64 object-cover rounded-md" />
                             </div>
                             <p class="text-sm text-gray-800 text-center">
                                 &lt;h3&gt; Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing Elit &lt;/h3&gt;
@@ -213,12 +193,10 @@
                     <div class="flex-shrink-0 w-64 border border-gray-200 rounded-lg">
                         <div class="p-4">
                             <div class="relative mb-4">
-                                <span class="absolute top-2 left-2 bg-blue-900 text-white text-xs px-2 py-1 rounded-sm">NOVO</span>
-                                <img
-                                    src="assets/img/model.png"
-                                    alt="White t-shirt"
-                                    class="w-full h-64 object-cover rounded-md"
-                                />
+                                <span
+                                    class="absolute top-2 left-2 bg-blue-900 text-white text-xs px-2 py-1 rounded-sm">NOVO</span>
+                                <img src="assets/img/model.png" alt="White t-shirt"
+                                    class="w-full h-64 object-cover rounded-md" />
                             </div>
                             <p class="text-sm text-gray-800 text-center">
                                 &lt;h3&gt; Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing Elit &lt;/h3&gt;
@@ -241,12 +219,10 @@
                     <div class="flex-shrink-0 w-64 border border-gray-200 rounded-lg">
                         <div class="p-4">
                             <div class="relative mb-4">
-                                <span class="absolute top-2 left-2 bg-blue-900 text-white text-xs px-2 py-1 rounded-sm">NOVO</span>
-                                <img
-                                    src="assets/img/model.png"
-                                    alt="White t-shirt"
-                                    class="w-full h-64 object-cover rounded-md"
-                                />
+                                <span
+                                    class="absolute top-2 left-2 bg-blue-900 text-white text-xs px-2 py-1 rounded-sm">NOVO</span>
+                                <img src="assets/img/model.png" alt="White t-shirt"
+                                    class="w-full h-64 object-cover rounded-md" />
                             </div>
                             <p class="text-sm text-gray-800 text-center">
                                 &lt;h3&gt; Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing Elit &lt;/h3&gt;
@@ -267,14 +243,16 @@
                 </div>
 
                 <!-- Navigation arrows -->
-                <button class="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-4 bg-white shadow-lg rounded-full w-10 h-10 flex items-center justify-center border border-gray-200 hover:bg-gray-50">
+                <button
+                    class="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-4 bg-white shadow-lg rounded-full w-10 h-10 flex items-center justify-center border border-gray-200 hover:bg-gray-50">
                     <span class="icon-left text-gray-600 text-xl"></span>
                 </button>
-                <button class="absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-4 bg-white shadow-lg rounded-full w-10 h-10 flex items-center justify-center border border-gray-200 hover:bg-gray-50">
+                <button
+                    class="absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-4 bg-white shadow-lg rounded-full w-10 h-10 flex items-center justify-center border border-gray-200 hover:bg-gray-50">
                     <span class="icon-right text-gray-600 text-xl"></span>
                 </button>
             </div>
-            
+
             <!-- Pagination Dots -->
             <div class="flex justify-center mt-6 space-x-2">
                 <button class="w-2 h-2 bg-gray-800 rounded-full"></button>
@@ -293,18 +271,26 @@
                 <h2 class="text-3xl font-bold text-gray-900">LOREM IPSUM</h2>
                 <div class="space-y-4 text-gray-700 leading-relaxed">
                     <p>
-                        Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris laoreet lacus ut 
-                        eleifend viverra. Cras efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia pharetra magna, vel 
-                        pulvinar ligula hendrerit a. Maecenas fringilla porttitor tortor eget lacinia. Donec sollicitudin euismod orci, 
-                        auctor fringilla magna consequat interdum. Fusce sagittis elit a libero commodo egestas efficitur id 
+                        Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris laoreet
+                        lacus ut
+                        eleifend viverra. Cras efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia
+                        pharetra magna, vel
+                        pulvinar ligula hendrerit a. Maecenas fringilla porttitor tortor eget lacinia. Donec
+                        sollicitudin euismod orci,
+                        auctor fringilla magna consequat interdum. Fusce sagittis elit a libero commodo egestas
+                        efficitur id
                         augue.
                     </p>
-                    
+
                     <p>
-                        Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris laoreet lacus ut 
-                        eleifend viverra. Cras efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia pharetra magna, vel 
-                        pulvinar ligula hendrerit a. Maecenas fringilla porttitor tortor eget lacinia. Donec sollicitudin euismod orci, 
-                        auctor fringilla magna consequat interdum. Fusce sagittis elit a libero commodo egestas efficitur id 
+                        Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris laoreet
+                        lacus ut
+                        eleifend viverra. Cras efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia
+                        pharetra magna, vel
+                        pulvinar ligula hendrerit a. Maecenas fringilla porttitor tortor eget lacinia. Donec
+                        sollicitudin euismod orci,
+                        auctor fringilla magna consequat interdum. Fusce sagittis elit a libero commodo egestas
+                        efficitur id
                         augue.
                     </p>
                 </div>
@@ -319,18 +305,26 @@
                 <h2 class="text-3xl font-bold text-gray-900">LOREM IPSUM</h2>
                 <div class="space-y-4 text-gray-700 leading-relaxed">
                     <p>
-                        Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris laoreet lacus ut 
-                        eleifend viverra. Cras efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia pharetra magna, vel 
-                        pulvinar ligula hendrerit a. Maecenas fringilla porttitor tortor eget lacinia. Donec sollicitudin euismod orci, 
-                        auctor fringilla magna consequat interdum. Fusce sagittis elit a libero commodo egestas efficitur id 
+                        Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris laoreet
+                        lacus ut
+                        eleifend viverra. Cras efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia
+                        pharetra magna, vel
+                        pulvinar ligula hendrerit a. Maecenas fringilla porttitor tortor eget lacinia. Donec
+                        sollicitudin euismod orci,
+                        auctor fringilla magna consequat interdum. Fusce sagittis elit a libero commodo egestas
+                        efficitur id
                         augue.
                     </p>
-                    
+
                     <p>
-                        Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris laoreet lacus ut 
-                        eleifend viverra. Cras efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia pharetra magna, vel 
-                        pulvinar ligula hendrerit a. Maecenas fringilla porttitor tortor eget lacinia. Donec sollicitudin euismod orci, 
-                        auctor fringilla magna consequat interdum. Fusce sagittis elit a libero commodo egestas efficitur id 
+                        Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris laoreet
+                        lacus ut
+                        eleifend viverra. Cras efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia
+                        pharetra magna, vel
+                        pulvinar ligula hendrerit a. Maecenas fringilla porttitor tortor eget lacinia. Donec
+                        sollicitudin euismod orci,
+                        auctor fringilla magna consequat interdum. Fusce sagittis elit a libero commodo egestas
+                        efficitur id
                         augue.
                     </p>
                 </div>
@@ -356,4 +350,5 @@
         });
     </script>
 </body>
+
 </html>
